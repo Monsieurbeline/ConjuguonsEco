@@ -1,0 +1,18 @@
+ConjuguonsEco – images à déposer dans le dossier img/ (elles remplacent automatiquement les fonds et icônes de secours)
+- Fond de chaque niveau : bg-A1.jpg, bg-A2.jpg, bg-B1.jpg, bg-B2.jpg
+- Image d'une étape (flore, faune…) : A1-1.jpg à B2-4.jpg (niveau-numéro d'étape, ex. A2-3.jpg)
+- Personnages des dialogues (png, idéalement carrés, visage centré) :
+    char-sole.png (Grand-père Solé), char-explorateur.png (l'explorateur), char-sargasse.png (Sargassum Fluitan)
+- Déjà intégrés : logo.png, tinet.png
+Réglages dans app.js : UNLOCK_ALL (ouvrir tous les niveaux), REVEAL_AFTER_3, HINT_COST.
+Dialogues/fiches : table FX dans app.js (par étape et numéro de paragraphe).
+
+Poses de Ti-Nèt : img/tinet.png (neutre), tinet-ok.png (pouce levé : réussite), tinet-cheer.png (applaudit : encouragement).
+Les états « raté », « triste » et « réflexion » sont obtenus avec des effets (goutte, nuage, point d'interrogation) ajoutés sur le dessin neutre.
+Pour de vraies poses dessinées : ajouter img/tinet-ko.png, tinet-sad.png, tinet-think.png puis les référencer dans MIMG (app.js).
+
+v5 – Pédagogie et accessibilité
+- Dictionnaire : liste GL dans app.js (formes regex, mot, définition). Ajouter une ligne pour définir un nouveau mot.
+- Rappels de conjugaison : table LS dans app.js.
+- Entraîner : révision des erreurs, mini-jeu « Verbes éclair », carnet de nature (lecture + voix du téléphone).
+- Ambiance sonore générée par le code (pas de fichier audio). Réglages : Profil > Réglages.
